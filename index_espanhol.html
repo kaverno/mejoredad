@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubriendo la Tecnología - La Guía para Adultos Mayores</title>
+    <style>
+        /* Estilos base y Accesibilidad (Letras grandes) */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            margin: 0;
+            padding: 0;
+            background-color: #f7fafc;
+            font-size: 20px;
+        }
+        
+        h1, h2, h3 {
+            color: #1a365d;
+            line-height: 1.3;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Secciones */
+        section {
+            padding: 60px 0;
+        }
+
+        .bg-white {
+            background-color: #ffffff;
+        }
+
+        .bg-light-blue {
+            background-color: #ebf8ff;
+        }
+
+        /* Hero Section (La Promesa) */
+        .hero {
+            background-color: #1a365d;
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        
+        .hero h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            color: #e2e8f0;
+        }
+
+        /* Botones de Compra */
+        .cta-button {
+            display: inline-block;
+            background-color: #38a169;
+            color: white;
+            padding: 20px 40px;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.2s;
+            text-align: center;
+        }
+
+        .cta-button:hover {
+            background-color: #2f855a;
+            transform: scale(1.05);
+        }
+
+        /* Lista de Dolores y Beneficios */
+        .check-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .check-list li {
+            margin-bottom: 15px;
+            padding-left: 35px;
+            position: relative;
+        }
+
+        .check-list.pain li::before {
+            content: "❌";
+            position: absolute;
+            left: 0;
+        }
+
+        .check-list.benefits li::before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Imagen del Producto */
+        .product-image {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Autoridad */
+        .author-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .author-box img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #1a365d;
+        }
+
+        /* Garantía */
+        .guarantee-box {
+            text-align: center;
+            border: 3px dashed #ecc94b;
+            background-color: #fffff0;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        /* Oferta Final */
+        .offer-section {
+            text-align: center;
+        }
+
+        .price-old {
+            text-decoration: line-through;
+            color: #a0aec0;
+            font-size: 1.2em;
+        }
+
+        .price-new {
+            color: #e53e3e;
+            font-size: 3em;
+            font-weight: bold;
+            margin: 10px 0 30px 0;
+        }
+
+        /* Botón Flotante de WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 65px;
+            height: 65px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsividad para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2em; }
+            .author-box { flex-direction: column; text-align: center; align-items: center; }
+            .cta-button { width: 100%; padding: 20px 0; box-sizing: border-box; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Domina tu Celular y el Internet en Pocos Días, Sin Depender de Nadie y con Total Seguridad.</h1>
+            <p>Una guía práctica, amigable y paso a paso creada especialmente para Adultos Mayores. Aprende a usar WhatsApp, las redes sociales, a protegerte de estafas y a usar la Inteligencia Artificial, todo a tu propio ritmo.</p>
+            <a href="#comprar" class="cta-button">👉 QUIERO MI INDEPENDENCIA DIGITAL</a>
+        </div>
+    </header>
+
+    <section class="bg-white">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">¿Sientes que el mundo avanza demasiado rápido y la tecnología te está dejando atrás?</h2>
+            <p><strong>Responde con sinceridad:</strong></p>
+            <ul class="check-list pain">
+                <li>¿Sientes miedo de tocar el botón equivocado y arruinar tu celular?</li>
+                <li>¿Temes caer en fraudes y estafas en internet, poniendo en riesgo tu dinero?</li>
+                <li>¿Te avergüenza tener que pedir ayuda a tus hijos o nietos constantemente (y muchas veces ellos no tienen paciencia)?</li>
+                <li>¿Te sientes aislado(a) por no saber usar bien Facebook, Instagram o hacer videollamadas con quienes viven lejos?</li>
+            </ul>
+            <p style="margin-top: 30px;">Si respondiste "sí" a alguna de estas preguntas, respira profundo. <strong>La culpa no es tuya.</strong> Los manuales son confusos y los cursos en internet están hechos por jóvenes, para jóvenes. ¡Pero eso se acaba hoy!</p>
+        </div>
+    </section>
+
+    <section class="bg-light-blue">
+        <div class="container">
+            <h2 style="text-align: center;">Conoce "Descubriendo la Tecnología": Tu nuevo mejor amigo en el mundo digital.</h2>
+            
+            <div class="product-image">
+                <img src="https://via.placeholder.com/400x500?text=Portada+del+E-book+Aqui" alt="Portada del E-book Descubriendo la Tecnología">
+            </div>
+
+            <p style="text-align: center;">Este no es solo un libro más. Es un verdadero "traductor" del mundo moderno, escrito con cariño, respeto y paciencia para ti, que ya has vivido grandes transformaciones. Con letras fáciles de leer y un método paso a paso, transformaremos tu miedo en confianza absoluta.</p>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container">
+            <h2>Lo que vas a dominar con esta Guía:</h2>
+            <ul class="check-list benefits">
+                <li><strong>El ABC de tu Celular:</strong> Descubre para qué sirve cada botón, cómo cargar la batería y la regla de oro del "toque suave" en la pantalla.</li>
+                <li><strong>Navegación Blindada:</strong> Aprende a identificar mensajes falsos, correos peligrosos y llamadas de estafadores. ¡Nunca más tendrás miedo!</li>
+                <li><strong>Tus Redes Sociales:</strong> El paso a paso para crear tu Facebook, Instagram y TikTok. Comparte fotos y reencuéntrate con amigos sin exponer tu privacidad.</li>
+                <li><strong>La Inteligencia Artificial a tu Favor:</strong> Un capítulo entero sobre ChatGPT y Gemini. Tendrás un "asistente" para darte recetas y resúmenes de noticias.</li>
+                <li><strong>El Diccionario de Bolsillo:</strong> La traducción sencilla de palabras difíciles como <em>App, Link, Wi-Fi, Nube</em> y <em>Download</em>.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="bg-light-blue">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px;">¿Quién te guiará en este viaje?</h2>
+            <div class="author-box">
+                <img src="https://via.placeholder.com/180?text=Tu+Foto" alt="Foto del Profesor Kleus Corrêa">
+                <div>
+                    <h3 style="margin-top: 0;">Hola, soy el Profesor Kleus Corrêa.</h3>
+                    <p>Durante 23 años, he dedicado mi vida a enseñar en FAETEC (Fundación de Apoyo a la Escuela Técnica), una institución pública de Río de Janeiro, Brasil. Como profesor y actual coordinador académico, he capacitado a miles de personas, desde profesionales de la salud y educación hasta <strong>grupos exclusivos para adultos mayores</strong>.</p>
+                    <p>Fue exactamente en las aulas con la Tercera Edad donde vi ampliarse los horizontes. El intercambio de experiencias con mis alumnos mayores me inspiró profundamente. Soy especialista en seguridad de datos desde 2005, lo que significa que <strong>te enseñaré a navegar con máxima protección contra estafas y fraudes</strong>.</p>
+                    <p>Inspirado por mis alumnos y por mis propios padres (quienes también dominaron la tecnología), creé este material. Mi misión es demostrarte que la vida no tiene límite de edad para ser plenamente explorada. ¿Vamos juntos?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+        <div class="container">
+            <div class="guarantee-box">
+                <h2>🔒 Garantía de Confianza: ¡El riesgo es 100% mío!</h2>
+                <p>Quiero que te sientas completamente tranquilo(a). Por eso, te ofrezco una <strong>Garantía Incondicional de 7 Días</strong>. Compra el E-book, lee los primeros capítulos y, si sientes que el lenguaje no es sencillo o que el libro no te ayudó, solo tienes que enviarme un correo. Te devolveré el 100% de tu dinero, sin burocracia ni preguntas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="comprar" class="bg-light-blue offer-section">
+        <div class="container">
+            <h2>¿Cuánto vale tu independencia?</h2>
+            <p>Podrías gastar cientos de dólares pagando clases particulares, o depender eternamente de la paciencia de otras personas. Pero hoy, puedes tener acceso a todo este conocimiento en formato digital (para leer en tu propio celular, tableta o imprimirlo) por un valor totalmente accesible.</p>
+            
+            <div class="price-old">De: USD 47.00</div>
+            <div class="price-new">Por solo: USD 19.90</div>
+            
+            <a href="TU_ENLACE_DE_CHECKOUT_DE_HOTMART_AQUI" class="cta-button">👉 ¡SÍ! QUIERO DOMINAR MI CELULAR HOY</a>
+            <p style="margin-top: 20px; font-size: 0.8em; color: #718096;">Pago 100% seguro. Acceso inmediato en tu correo electrónico.</p>
+        </div>
+    </section>
+
+    <a href="https://wa.me/5521900000000?text=¡Hola%20Profesor%20Kleus!%20Tengo%20una%20duda%20sobre%20cómo%20comprar%20el%20E-book." class="whatsapp-float" target="_blank" title="¿Dudas? Habla con nosotros en WhatsApp">
+        💬
+    </a>
+
+</body>
+</html>
